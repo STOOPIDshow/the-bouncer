@@ -1,0 +1,6 @@
+.env
+*.env
+config.yaml
+snapshots/
+reports/
+__pycache__/

@@ -1,0 +1,30 @@
+# The Bouncer - every user-specific setting lives here. NO secrets in this file.
+# Copy to config.yaml (or run: python3 -m bouncer setup) and edit.
+handle: your_handle_here            # your X handle, without the @
+monthly_spend_cap_usd: 10.00        # refuse to scan if projected monthly cost exceeds this
+scan_cadence: monthly               # weekly | monthly | quarterly (monthly is plenty for most accounts)
+report_day: monday                  # day your reminder/scheduled scan runs; "scan now" works any time
+inactivity_window_days: 90          # dead follows: accounts you follow with no post in this many days
+engagement_protect_days: 90         # anyone who replied/quoted/mentioned you in this window is protected
+posts_report_days: 7                # first scan only: window for "posts that went out" (later scans use time since last scan)
+own_posts_lookback_days: 90         # how far back to pull your own posts for engagement context
+top_engagers: 10
+
+protect:                            # never flagged as suspected bots
+  handles: []                       # e.g. [friendaccount, collabpartner]
+  hashtags: []                      # matched in bios, for campaigns/ARGs/events, e.g. ["#MyARG", "#EventName"]
+
+bot_signals:                        # an account is "suspected" only when min_signals_to_flag overlap
+  min_signals_to_flag: 3
+  max_followers: 50                 # signal if followers < this
+  min_following: 1000               # signal if following > this
+  zero_posts: true                  # signal if the account has never posted
+  digit_ratio: 0.4                  # signal if share of digits in handle >= this ...
+  min_trailing_digits: 4            # ... or handle ends with this many digits
+  default_avatar: true              # signal if default profile picture
+  new_account_days: 30              # signal if account younger than this
+  bio_keywords: [crypto, nft, airdrop, forex, giveaway, "dm me", "dm for", promo, "link in bio", onlyfans, bitcoin, btc, eth, invest, trading signals, "100x", earn, "make money", web3, presale]
+
+# Pricing (USD). Check console.x.com; X can change these.
+owned_read_rate_usd: 0.001          # per item returned from your own followers/following/mentions/posts
+user_lookup_rate_usd: 0.010         # per user lookup (1 per estimate/scan)
