@@ -1,0 +1,77 @@
+[
+ {
+  "data": [
+   {
+    "id": "1",
+    "username": "alice_dev",
+    "name": "alice_dev",
+    "created_at": "2015-01-01T00:00:00.000Z",
+    "description": "Building things.",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1/a.jpg",
+    "public_metrics": {
+     "followers_count": 300,
+     "following_count": 200,
+     "tweet_count": 500,
+     "listed_count": 0
+    },
+    "most_recent_tweet_id": "2105628794680246272"
+   },
+   {
+    "id": "2",
+    "username": "bobmakes",
+    "name": "bobmakes",
+    "created_at": "2015-01-01T00:00:00.000Z",
+    "description": "Building things.",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1/a.jpg",
+    "public_metrics": {
+     "followers_count": 300,
+     "following_count": 200,
+     "tweet_count": 500,
+     "listed_count": 0
+    },
+    "most_recent_tweet_id": "2105628794680246272"
+   }
+  ],
+  "meta": {
+   "result_count": 2,
+   "next_token": "p2"
+  }
+ },
+ {
+  "data": [
+   {
+    "id": "3",
+    "username": "leaving_larry",
+    "name": "leaving_larry",
+    "created_at": "2015-01-01T00:00:00.000Z",
+    "description": "Building things.",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1/a.jpg",
+    "public_metrics": {
+     "followers_count": 300,
+     "following_count": 200,
+     "tweet_count": 500,
+     "listed_count": 0
+    },
+    "most_recent_tweet_id": "2105628794680246272"
+   },
+   {
+    "id": "6",
+    "username": "sam19",
+    "name": "sam19",
+    "created_at": "2015-01-01T00:00:00.000Z",
+    "description": "Building things.",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1/a.jpg",
+    "public_metrics": {
+     "followers_count": 20,
+     "following_count": 50,
+     "tweet_count": 10,
+     "listed_count": 0
+    },
+    "most_recent_tweet_id": "2105628794680246272"
+   }
+  ],
+  "meta": {
+   "result_count": 2
+  }
+ }
+]
