@@ -1,5 +1,9 @@
 # The Bouncer
 
+**Try it:** [Get The Bouncer as a Grok Bot](https://x.ai/bot/Wu7RQdOP-OY84e4NPOKqM) · [Listed on the X Developer Exhibit](https://developer.x.com/exhibit/the-bouncer)
+
+The Grok Bot template walks you through setup in chat (about 10 minutes) and asks for your keys through masked secret boxes. Prefer the command line? Follow the setup steps below.
+
 A read-only follower-health scanner for X. Once a month (or whenever you say "scan now") it takes a snapshot of your followers and the accounts you follow, compares it with the last one, and writes a **private** report:
 
 - **New followers**: which look real and which are likely bots
